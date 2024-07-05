@@ -1,101 +1,97 @@
-﻿int[,] array = new int[20,20];
+﻿using System;
 
-Random rnd = new Random();
-
-//array 20 by 20
-
-for (int i = 0; i < array.GetLength(0) ; i++)
+class Program
 {
-    for (int j = 0; j < array.GetLength(0); j++)
+    static void Main()
     {
-        array[i, j] = rnd.Next(1, 100);
-        Console.WriteLine("[{0}, {1}] = {2}", i, j , array[i, j]);
-    }
-}
+        int[,] array = new int[20, 20];
+        Random rnd = new Random();
 
-int min = array[0,0];
-
-int max = array[0,0];
-//smallest value in array and biggest value
-
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(0); j++)
-    {
-        if (min > array[i, j])
+        // set array values and display them
+        for (int i = 0; i < array.GetLength(0); i++)
         {
-            min = array[i, j];
-        }else if(max < array[i, j])
-        {
-            max = array[i, j];
-        }
-    }
-}
-Console.WriteLine("-----------------------");
-Console.WriteLine($"Smallest value: {min}, biggest value: {max}");
-Console.WriteLine("-----------------------");
-
-
-//finding coordinates for smallest value 
-
-Console.WriteLine("Coordinates of smallest value: ");
-for (int i = 0;i < array.GetLength(0); i++)
-{
-    for(int j = 0;j < array.GetLength(0); j++)
-    {
-        
-        if (array[i, j] == min)
-        {
-            
-            Console.WriteLine($" [{i}, {j}] = {min}");
-        }
-    }
-}
-
-Console.WriteLine("-----------------------");
-//finding coordinates for largest value
-Console.WriteLine("Coordinates of largest value: ");
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(0); j++)
-    {
-        if (array[i, j] == max)
-        {
-            
-            Console.WriteLine($" [{i}, {j}] = {max}");
-        }
-    }
-}
-
-Console.WriteLine("-----------------------");
-
-//sorting array
-
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(0) - 1; j++)
-    {
-        for (int k = 0; k < array.GetLength(0) - 1; k++)
-        {
-            if (array[i, k] > array[i, k + 1])
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                int tempValue = array[i, k];
-                array[i, k] = array[i, k + 1];
-                array[i, k + 1] = tempValue;
+                array[i, j] = rnd.Next(1, 100);
+                Console.Write($"{array[i, j],3} "); // space between arrays
+            }
+            Console.WriteLine();
+        }
 
+        int min = array[0, 0];
+        int max = array[0, 0];
+
+        // find largest and smallest in array
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                if (array[i, j] < min)
+                {
+                    min = array[i, j];
+                }
+                if (array[i, j] > max)
+                {
+                    max = array[i, j];
+                }
             }
         }
-    }
-}
 
-//displaying sorted array
+        // smallest value
+        Console.WriteLine("-----------------------");
+        Console.WriteLine($"Smallest value: {min}");
+        Console.WriteLine("Coordinates of smallest value:");
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                if (array[i, j] == min)
+                {
+                    Console.WriteLine($" [{i}, {j}] = {min}");
+                }
+            }
+        }
 
-for (int i = 0;i < array.GetLength(0); i++)
-{
-    Console.WriteLine($"{i} :");
-    for(int j = 0;j < array.GetLength(0); j++)
-    {
+        // largest value
+        Console.WriteLine("-----------------------");
+        Console.WriteLine($"Largest value: {max}");
+        Console.WriteLine("Coordinates of largest value:");
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                if (array[i, j] == max)
+                {
+                    Console.WriteLine($" [{i}, {j}] = {max}");
+                }
+            }
+        }
+
+        Console.WriteLine("-----------------------");
+
+        // sort array
+        int[] sortedArray = new int[array.Length];
+        int index = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                sortedArray[index++] = array[i, j];
+            }
+        }
+        Array.Sort(sortedArray);
+
         
-        Console.WriteLine($"{array[i, j]}");
+        Console.WriteLine("Sorted array:");
+        index = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                array[i, j] = sortedArray[index++];
+                Console.Write($"{array[i, j],3} "); 
+            }
+            Console.WriteLine();
+        }
     }
 }

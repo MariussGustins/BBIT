@@ -1,0 +1,15 @@
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/bin/Debug/net8.0/Task1
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/bin/Debug/net8.0/Task1.deps.json
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/bin/Debug/net8.0/Task1.runtimeconfig.json
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/bin/Debug/net8.0/Task1.dll
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/bin/Debug/net8.0/Task1.pdb
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.AssemblyInfoInputs.cache
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.AssemblyInfo.cs
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.csproj.CoreCompileInputs.cache
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.sourcelink.json
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.dll
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/refint/Task1.dll
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.pdb
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/Task1.genruntimeconfig.cache
+/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/Debug/net8.0/ref/Task1.dll

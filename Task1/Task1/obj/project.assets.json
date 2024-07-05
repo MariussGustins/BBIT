@@ -1,42 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\MariussGustins\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/mariussgustins/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MariussGustins\\Source\\Repos\\BBIT\\Task1\\Task1\\Task1.csproj",
+      "projectUniqueName": "/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/Task1.csproj",
       "projectName": "Task1",
-      "projectPath": "C:\\Users\\MariussGustins\\Source\\Repos\\BBIT\\Task1\\Task1\\Task1.csproj",
-      "packagesPath": "C:\\Users\\MariussGustins\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MariussGustins\\Source\\Repos\\BBIT\\Task1\\Task1\\obj\\",
+      "projectPath": "/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/Task1.csproj",
+      "packagesPath": "/Users/mariussgustins/.nuget/packages/",
+      "outputPath": "/Users/mariussgustins/RiderProjects/BBIT_Task1/Task1/Task1/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\MariussGustins\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mariussgustins/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -47,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -65,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
